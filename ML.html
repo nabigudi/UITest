@@ -15,7 +15,7 @@
 <body class="ml-vip">
     <!-- Set url registration -->
     <!-- Descripcion del producto, boton ofertar, reputacion. -->
-    <div class="vip-wrapper vip-os">
+    <div itemscope class="vip-wrapper vip-os">
         <!-- end nav-path -->
         <!-- Component preheader end -->
         <header class="bg-great-info">
@@ -23,15 +23,15 @@
         </header>      
         <section id="product-container">
             <section class="column-left">
-                <img class="main-image" src="http://static.betazeta.com/www.niubie.com/up/2013/12/apple-ipad-mini-formfactor.jpg" alt="">
+                <img itemprop="image" class="main-image" src="http://static.betazeta.com/www.niubie.com/up/2013/12/apple-ipad-mini-formfactor.jpg" alt="">
             </section>
             <section class="column-right">
                 <form action="#" class="product-info" id="productInfo" method="get">
-                    <fieldset class="price-legend">
+                    <fieldset itemprop="price" class="price-legend">
                         <article class="price ch-price "> <strong>  $ 4799<sup>99</sup> </strong> </article>
                     </fieldset>
                     <!-- quantity -->
-                    <fieldset>
+                    <fieldset itemprop="quantity">
                         <span class="sub-tag">Quantity</span> 
                         <select class="margin-left-15">
                             <option>1</option>
@@ -39,14 +39,14 @@
                         </select>
                     </fieldset>
                     <!-- payments -->
-                    <fieldset>
+                    <fieldset itemprop="payments">
                         <span class="sub-tag">Payments</span> 
                         <select class="margin-left-5">
                             <option>12</option>
                             <option>6</option>
                         </select>
                     </fieldset>
-                    <fieldset class="action">
+                    <fieldset itemprop="comprar" class="action">
                         <div class="action-row ">
                             <input type="submit" onclick="makeBid = true;" title="Comprar Ipad Mini Apple 16 GB Wifi Led 7.9" value="Comprar" class="ch-btn ch-btn-big" id="BidButtonTop">
                         </div>
@@ -57,10 +57,9 @@
                     <fieldset>
                         <div id="moreItemsContainer" style="width: 450px;">
                             <div class="vip-bounds">
-                                <div id="prueba"></div>
-                                <div class="items-carousel box-lite ">
+                                <div itemprop="more-products" class="items-carousel box-lite ">
                                     <h2 class="bold">More products like this</h2> 
-                                    <div class="ch-carousel more-items" style="overflow: hidden;">
+                                    <div class="ch-carousel more-items" style="overflow: hidden;" type="slider">
                                         <div class="ch-carousel-prev ch-user-no-select" role="button" aria-hidden="false"></div>
                                         <div class="ch-carousel-mask ch-carousel-adaptive" role="tabpanel" style="height: 100px;">
                                             <ul class="ch-carousel-list" role="list" style="width: 3300px;">
@@ -93,27 +92,27 @@
         <div class="buyer-protection"></div>
         <section id="container">
             <!--Pestaña 1 activa por defecto-->
-            <input id="tab-1" type="radio" name="tab-group"  />
+            <input itemprop="product-description" id="tab-1" type="radio" name="tab-group"  />
             <label for="tab-1">Product Description</label>
             <!--Pestaña 2 inactiva por defecto-->
-            <input id="tab-2" type="radio" name="tab-group" checked="checked"/>
+            <input itemprop="questions" id="tab-2" type="radio" name="tab-group" checked="checked"/>
             <label for="tab-2">Questions</label>
             <!--Contenido a mostrar/ocultar-->
-            <div id="content">
+            <div id="content" >
                 <!--Contenido de la Pestaña 1-->
-                <div id="content-1">
-                    <article class="description-section">
+                <div id="content-1" itemscope= "description-section">
+                    <article itemprop="description" class="description-section">
                         <h5 class="description-head">Description</h5>
                         <p class="left ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit reprehenderit iusto harum minima. Assumenda, accusamus, perspiciatis inventore tempora qui pariatur quisquam? Deleniti, placeat ea nostrum officiis obcaecati temporibus quod. Ullam, in, adipisci autem at fugit ab tempore enim ratione nesciunt alias corporis vitae quo quod nostrum itaque vero iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, id blanditiis deserunt in molestiae excepturi incidunt molestias dolor sunt dolore obcaecati non repellat mollitia error placeat est exercitationem sit voluptates iure autem saepe voluptas harum unde perferendis modi provident labore voluptatum. Repudiandae, aspernatur sit harum quod vero quos sequi voluptas! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit reprehenderit iusto harum minima. Assumenda, accusamus, perspiciatis inventore tempora qui pariatur quisquam? Deleniti, placeat ea nostrum officiis obcaecati temporibus quod. Ullam, in, adipisci autem at fugit ab tempore enim ratione nesciunt alias corporis vitae quo quod nostrum itaque vero iure?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, id blanditiis deserunt in molestiae excepturi incidunt molestias dolor sunt dolore obcaecati non repellat mollitia error placeat est exercitationem sit voluptates iure autem saepe voluptas harum unde perferendis modi provident labore voluptatum. Repudiandae, aspernatur sit harum quod vero quos sequi voluptas!</p>
                     </article>                    
                 </div>
                 <!--Contenido de la Pestaña 2-->
-                <div id="content-2">
-                   <article class="question-section">
+                <div id="content-2" itemscope="qa-section">
+                   <article class="question-section" itemprop="question">
                         <h5 class="question-head">Buyer</h5>
                         <p class="left question qasection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum sit reprehenderit iusto harum minima. Assumenda, accusamus, perspiciatis inventore tempora qui pariatur quisquam? Deleniti, placeat ea nostrum officiis obcaecati temporibus quod. Ullam, in, adipisci autem at fugit ab tempore enim ratione nesciunt alias corporis vitae quo quod nostrum itaque vero iure?</p>
                     </article>
-                    <article class="answer-section">
+                    <article class="answer-section" itemprop="answer">
                         <h5 class="answer-head">Seller</h5>
                         <p class="left last answer qasection">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, id blanditiis deserunt in molestiae excepturi incidunt molestias dolor sunt dolore obcaecati non repellat mollitia error placeat est exercitationem sit voluptates iure autem saepe voluptas harum unde perferendis modi provident labore voluptatum. Repudiandae, aspernatur sit harum quod vero quos sequi voluptas!</p>
                     </article>       
@@ -122,7 +121,7 @@
         </section>
     </div>
 
-    <footer class="footer" role="contentinfo">
+    <footer class="footer" role="contentinfo" itemscope= "copyright">
          Copyright &copy; Junio 2016 Nabila Melania Nahir Gudiño Ochoa
     </footer>    
 </body>
